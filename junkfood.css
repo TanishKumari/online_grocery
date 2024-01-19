@@ -1,0 +1,282 @@
+:root {
+  --green: #27ae60;
+  --black: #2c2c54;
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+*::selection {
+  background: var(--green);
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6.5rem;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--green);
+  color: #fff;
+  padding: .8rem 3rem;
+  font-size: 1.7rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--black);
+}
+
+.heading {
+  text-align: center;
+  color: var(--black);
+  text-transform: uppercase;
+  padding: 1rem;
+  font-size: 4.5rem;
+}
+
+.heading span {
+  color: var(--green);
+  text-transform: uppercase;
+}
+
+.header-1 {
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+}
+
+
+.logo {
+  color: var(--black);
+  font-weight: bolder;
+  font-size: 3.5rem;
+}
+
+.logo i {
+  padding-right: .5rem;
+  color: var(--green);
+}
+
+.header-1 .search-box-container {
+  display: flex;
+  height: 5rem;
+}
+
+.header-1 .search-box-container #search-box {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #333;
+  border: .1rem solid rgba(0, 0, 0, .3);
+  text-transform: none;
+}
+
+
+.header-1 .search-box-container label {
+  height: 100%;
+  width: 8rem;
+  font-size: 3.5rem;
+  line-height: 5rem;
+  color: #fff;
+  background: var(--green);
+  text-align: center;
+  cursor: pointer;
+}
+
+.header-1 .search-box-container label:hover {
+  background: var(--black);
+}
+
+.header-2 {
+  background: #fff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  position: relative;
+  height: 120px;
+  width: 100%;
+  margin-left: 10%;
+}
+
+.header-2.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+
+}
+
+.header-2 .navbar li {
+  padding: .5rem 1.5rem;
+  font-size: 3rem;
+  border-radius: .5rem;
+  display: inline-block;
+
+}
+
+.header-2 .navbar a:hover {
+  background: var(--green);
+  color: #fff;
+  cursor: pointer;
+}
+
+.header-2 .icons {
+  float: right;
+}
+
+.header-2 .icons a {
+  font-size: 3.5rem;
+  color: var(--black);
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+.header-2 .icons a:hover {
+  color: var(--green);
+}
+
+
+.stars i {
+  padding: 1rem .1rem;
+  font-size: 1.7rem;
+  color: gold;
+}
+
+.price {
+  font-size: 2rem;
+  color: #333;
+  padding: .5rem 0;
+  margin-left: 10px;
+}
+
+.price span {
+  font-size: 1.5rem;
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+.quantity {
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  margin-left: 10px;
+}
+
+.quantity span {
+  padding: 0.4rem;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.quantity input {
+  border: solid rgba(0, 0, 0, .3);
+  font-size: 1rem;
+  font-weight: bolder;
+  color: var(--black);
+  padding: .2rem;
+  background: rgba(0, 0, 0, .05);
+  margin-left: 10px;
+}
+
+
+.main {
+  width: 300px;
+  height: 400px;
+  margin-top: 100px;
+  margin-left: 50px;
+
+  transition: all 3s;
+  float: left;
+
+
+}
+
+.image {
+  width: 150px;
+  transition: all 3s;
+  transition: 1s;
+  margin: 20px;
+}
+
+.image:hover {
+  width: 120px;
+  transform: scale(1.2);
+  z-index: 2;
+
+}
+
+.price {
+  font-size: 2rem;
+  color: #333;
+  padding: .5rem 0;
+  margin-left: 10px;
+}
+
+.price span {
+  font-size: 1.5rem;
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+.quantity {
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  margin-left: 10px;
+}
+
+.quantity span {
+  padding: 0.4rem;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.quantity input {
+  border: solid rgba(0, 0, 0, .3);
+  font-size: 1rem;
+  font-weight: bolder;
+  color: var(--black);
+  padding: .2rem;
+  background: rgba(0, 0, 0, .05);
+  margin-left: 10px;
+}
+
+.btn {
+  color: black;
+  background-color: gray;
+  transition: all 3s;
+  border-radius: 2px;
+  width: 50%;
+}
+
+.btn:hover {
+  color: white;
+  box-shadow: inset;
+}
